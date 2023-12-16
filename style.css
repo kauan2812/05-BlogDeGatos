@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Mulish", sans-serif;
+  font-size: 62.5%;
+
+  --color-blue-100: #387e96;
+  --color-blue-500: #065e7c;
+  --color-font-title: #202024;
+  --color-font-text: #121214;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+html,
+body,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+.container-2 {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.6rem;
+  background-color: var(--color-blue-500);
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.header-wrapper .logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-wrapper label {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.header-wrapper form {
+  flex: 1;
+}
+
+.header-wrapper input {
+  width: 100%;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
+  border: 0;
+  background-color: var(--color-blue-100);
+}
+
+.header-wrapper input::placeholder {
+  color: #fff;
+}
+
+.header-wrapper .avatar img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.main-wrapper .banner img {
+  width: 100%;
+}
+
+.title {
+  margin: 3rem 0;
+  padding: 0 2.2rem;
+}
+
+.main-wrapper h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  color: var(--color-font-title);
+}
+
+.buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.buttons button {
+  padding: 1.2rem;
+  border-radius: 50%;
+  background-color: var(--color-blue-500);
+  border: 0;
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.text {
+  padding: 0 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.text p {
+  color: var(--color-font-text);
+  line-height: 2.5rem;
+}
+
+.seccond-wrapper {
+  padding: 0 2.2rem;
+  margin-bottom: 4rem;
+}
+
+.seccond-wrapper h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+  color: var(--color-font-title);
+  margin-bottom: 3rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1.6rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.item img {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--color-blue-100);
+  padding: 1.6rem;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 1100px) {
+  .container-2 {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+  }
+
+  .banner {
+    padding: 0 2.2rem;
+    margin-top: 4rem;
+  }
+
+  .seccond-wrapper {
+    margin-top: 4rem;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
